@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <title>IA-Order Page</title>
+    <style>
+        .navbar {
+            background-image: url("navbar_bg.png");
+            
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid gray;
+        }
+
+        .top-heading {
+            background-color: rgb(255, 200, 99);
+        }
+
+        .sub-heading {
+            background-color: rgb(255, 229, 182);
+        }
+
+        #sub-heading {
+            background-color: rgb(250, 238, 216);
+        }
+
+        .food-icon {
+            height: 30px;
+        }
+
+
+        .thumbnail:hover {
+            background-color: rgb(106, 92, 76);
+
+        }
+
+        .food-row:hover {
+            background-color: orange;
+        }
+
+        .clickbuttons {
+            background-color: red;
+            font: size 1pt;
+
+        }
+
+        P {
+            font: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="ia_logo.png" style="width: 50px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active thumbnail" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active thumbnail" href="#">Order</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled thumbnail" href="#" tabindex="-1" aria-disabled="true">Shop</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="color:black">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <P>PALOAD</P>
+        <hr>
+        <div class="row mt-1">
+            <div class="col-lg-2 text-center px-3">
+                <div class="card">
+                    <img src="prepaidload-b.png" class="card-img-top" />
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary" id="clickbuttons">Pa-load</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <P>PABAYAD</P>
+        <hr>
+        <div class="row mt-1">
+            <div class="col-lg-2 text-center px-3">
+                <div class="card">
+                    <img src="billspay.png" class="card-img-top" />
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary" id="clickbuttons">Pa-Bayad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <P>PADALA</P>
+        <hr>
+        <div class="row mt-1">
+            <div class="col-lg-2 text-center px-3">
+                <div class="card">
+                    <img src="moneytrans.png" class="card-img-top" />
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Pa-dala</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 text-center px-3">
+                <div class="card">
+                    <img src="travtours-b.png" class="card-img-top" />
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Pa-dala</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center px-3">
+                <div class="card">
+                    <img src="courier-b.png" class="card-img-top" />
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Pa-dala</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <P>ATBP</P>
+        <hr>
+        <div class="row mt-1">
+            <div class="col-lg-2 text-center px-3">
+                <div class="card">
+                    <img src="xp-market.png" class="card-img-top" />
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">XP Market Place</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

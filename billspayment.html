@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <title>IA-Order Page</title>
+    <style>
+        .navbar {
+            background-color: black;
+            
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid gray;
+        }
+
+        .top-heading {
+            background-color: rgb(255, 200, 99);
+        }
+
+        .sub-heading {
+            background-color: rgb(255, 229, 182);
+        }
+
+        #sub-heading {
+            background-color: rgb(250, 238, 216);
+        }
+
+        .food-icon {
+            height: 30px;
+        }
+
+
+        .thumbnail:hover {
+            background-color: rgb(106, 92, 76);
+
+        }
+
+        .food-row:hover {
+            background-color: orange;
+        }
+
+        .clickbuttons {
+            background-color: red;
+            font: size 1pt;
+
+        }
+
+        P {
+            font: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="ia_logo.png.png" style="width: 50px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active thumbnail" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active thumbnail" href="#">Order</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled thumbnail" href="#" tabindex="-1" aria-disabled="true">Shop</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="color:black">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-1 pd-1">
+        <div class="row">
+            <div class="col-md-4 ">
+                IA Bills Payment Center
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                Welcome Irish!
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <img src="balance.jpg" style="width: 20px">
+                <p class=" fs-10">Branch Balance:_______</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 offset-md-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#selecttab" class="nav-link active" data-bs-toggle="tab">Select Biller</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#formtab" class="nav-link" data-bs-toggle="tab">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#confirmationtab" class="nav-link" data-bs-toggle="tab">Confirmation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#messagetab" class="nav-link" data-bs-toggle="tab">Message</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="selecttab">
+                    <div class>
+                        <p class="fs-1">Select Biller</p>
+                    </div>
+                    <div class="dropdown mt-1 pd 1">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                          Select Biller
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Abra</a></li>
+                          <li><a class="dropdown-item" href="#">Acom</a></li>
+                          <li><a class="dropdown-item" href="#">Active_realty</a></li>
+                          <li><a class="dropdown-item" href="#">Adamco</a></li>
+                          <li><a class="dropdown-item" href="#">Aeon_credit</a></li>
+                          <li><a class="dropdown-item" href="#">Aeternitas</a></li>
+                          <li><a class="dropdown-item" href="#">Afc_sme_finance</a></li>
+                          <li><a class="dropdown-item" href="#">Afterwest_microloans</a></li>
+                          <li><a class="dropdown-item" href="#">Agoda</a></li>
+                          <li><a class="dropdown-item" href="#">Agribank</a></li>
+                          <li><a class="dropdown-item" href="#">Aiqon</a></li>
+                          <li><a class="dropdown-item" href="#">Air_asia</a></li>
+                          <li><a class="dropdown-item" href="#">Airasia</a></li>
+                          <li><a class="dropdown-item" href="#">Airyougo_travels</a></li>
+                          <li><a class="dropdown-item" href="#">Akelco</a></li>
+                          <li><a class="dropdown-item" href="#">Alabang Country Club Inc</a></li>
+                          <li><a class="dropdown-item" href="#">Alaminos City Water District</a></li>
+                          <li><a class="dropdown-item" href="#">Allianz ONB Life Insurance Inc</a></li>
+                        
+                        </ul>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="formtab">
+                    <div class>
+                        <p class="fs-1">Enter Biller Info</p>
+                    </div>
+                 
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputbillername" class="form-label">Biller Name</label>
+                            <input type="text" id="inputbillername" class="form-control" aria-describedby="billernameHelpBlock">
+                            <div id="billernameHelpBlock" class="form-text">
+                            </div>
+                        <div class="mb-3">
+                            <label for="inputaccountname" class="form-label">Account Name</label>
+                            <input type="text" id="inputaccountname" class="form-control" aria-describedby="accountnameHelpBlock">
+                            <div id="accountnameHelpBlock" class="form-text">
+                            </div>
+                        <div class="mb-3">
+                            <label for="inputreference" class="form-label">Reference Number</label>
+                            <input type="text" id="inputreference" class="form-control" aria-describedby="referenceHelpBlock">
+                            <div id="referenceHelpBlock" class="form-text">
+                            </div>
+                        <div class="mb-3">
+                            <label for="inputcontact" class="form-label">Contact Number</label>
+                            <input type="text" id="inputcontact" class="form-control" aria-describedby="contactHelpBlock">
+                            <div id="contactHelpBlock" class="form-text">
+                            </div>
+                        <div class="mb-3">
+                            <label for="inputamount" class="form-label">Amount</label>
+                            <input type="text" id="inputamount" class="form-control" aria-describedby="billernameHelpBlock">
+                            <div id="inputcontactHelpBlock" class="form-text">
+                            </div>
+                        <button type="submit" class="btn btn-primary">Order</button>
+                      </form>
+
+                  
+                </div>
+                <div class="tab-pane fade " id="confirmationtab">
+                    <p>Confirmation Receipt</p>
+                </div> 
+                <div class="tab-pane fade" id="messagetab">
+                    <p>Messages tab content ...</p>
+                </div> 
+            </div>
+            </div>
+                
+            </div>
+
+
+    </div>
+</body>
+
+</html>

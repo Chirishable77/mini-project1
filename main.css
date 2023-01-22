@@ -1,0 +1,253 @@
+    .navbar {
+    background-image: url("navbar_bg.png");
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    width:1395px;
+    height:65px;
+  }
+  .thumbnail:hover {
+    background-color: red;
+    opacity: 20%;
+  }
+  .fa {
+     padding: 20px;
+     font-size: 30px;
+     width: 50px;
+     text-align: center;
+     text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+    color:red;
+  }
+
+
+    /* Facebook */
+ .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+    /* Twitter */
+ .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  #aboutcontainer {
+    background-color: rgb(0, 0, 205);
+    margin-top: 50px;
+    width: 100%
+  }
+  .bannercontainer {
+    background-color: rgb(30, 30, 111);
+    width: 100%;
+    color:white;  
+  }
+  .bannerlogo {
+    width: 100%;
+    height: 48%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:40%;
+    animation: fadeInFromTop .5s linear forwards,floating ease 4s infinite;
+ 
+  }
+  .bannerlogo img{
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:15%;
+    top:15%;
+    
+  }
+
+  @keyframes fadeInFromTop{
+    from{
+      opacity:0;
+      transform:translateY(-20px);
+    }
+    to{
+      opacity: 1;
+      transform:translateY(0);
+    }
+  }
+
+  @keyframes floating{
+    0%{
+      transform:translate(0%, 0%);
+    }
+    25%{
+      transform:translate(5%, 15%);
+    }
+    50%{
+      transform:translate(10%, 5%);
+    }
+    75%{
+      transform:translate(0%, 15%);
+    }
+    100%{
+      transform:translate(0%, 0%);
+    }
+  }
+
+  .caption1{
+    text-align: center;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    font-stretch:expanded;
+    font-weight: bold;
+
+  }
+  .caption2{
+    text-align: center;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    font-stretch:expanded;
+    margin-top: 0%;
+    opacity: 50%;
+  
+
+  }
+
+  #aboutTitle {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+
+  }
+
+  #Title1 {
+    color: rgb(23, 23, 99);
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+
+  #Title2 {
+    color: rgb(255, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+  }
+
+  #abouttext {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 900;
+  }
+
+  #storeimage {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .carouseldimension {
+    width: 1390px;
+    height: 150px;
+  }
+
+  .servicesimage {
+    width: 100%;
+    height: 100%
+  }
+
+  #titlefonts {
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+
+  #aboutcontainer2 {
+    background: rgb(255, 0, 0);
+    width: 100%;
+
+  }
+
+  .footercontainer3 {
+    background-color: rgb(19, 19, 103);
+    color: white;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    width: 100%
+  }
+
+  .footercontainer4 {
+    height: 65px;
+    width: 1418px;
+  }
+
+  .footertext {
+    color: black;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+
+  .contactUsbutton {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+  }
+
+  .containercarousel {
+    padding-top: 30px;
+  }
+
+  .slick-slide {
+    margin: 0 20px
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+  }
+
+  .slick-slide img {
+    display: block;
+  }
+
+  .slick-initialized .slick-slide {
+    display: block;
+  }
+
+  .copy {
+    padding-top: 250px;
+  }

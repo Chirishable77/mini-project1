@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<title>Online Support</title>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&family=Montserrat:wght@100;600&family=Patua+One&family=Poppins:wght@200&family=Roboto:wght@100&display=swap"rel="stylesheet">
+</head>
+<style>
+body {
+    margin: auto;
+    width: 640px; 
+     padding: 50px;
+    font-family:'Poppins', sans-serif;
+    font-weight:bold;
+    color: black;
+  
+}
+h1 {
+    color: red ;
+
+
+}
+#ContactComment{
+    width:500px;
+    height:80px;
+}
+#sendbutton {
+    color:white;
+    background-color: red;
+    font-family: 'Poppins', sans-serif; 
+    font-weight:bold;
+}
+#lp_logo{
+    margin-top: auto;
+    width: 20%;
+    height:20%;
+}
+</style>
+</head>
+  
+<body>
+
+<img src="Lp_icon.png" id="lp_logo"/>
+<h1>Email Support</h1>
+  
+<p>Submit your request and queries here.</p>
+ 
+
+<form action=”mailto:iabizmates@gmail.com”
+
+
+method=”POST”
+
+
+enctype=”text/plain”
+
+
+name=”EmailForm”>
+
+
+<label for="name">Branch Name:</label><br>
+<input type="text" id="branchname" name="branchname"><br>
+
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+
+<label for="name">Contact Number:</label><br>
+<input type="name" id="contactnumber" name="mobile number"><br>
+
+
+<label for="ContactCommentt">Message:</label><br>
+<textarea id="ContactComment" rows=”50″ cols=”100″></textarea><br>
+
+<input type="submit" value="Send" id="sendbutton">
+</form>
+ </body>

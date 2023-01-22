@@ -6,135 +6,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-    <title>IA-Order Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&family=Montserrat:wght@100;600&family=Patua+One&family=Poppins:wght@200&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <title>Billspayment Page</title>
     <style>
         .navbar {
-            background-color: black;
-            
+            background-image: url("navbar_bg.png");
+             font-family: 'Poppins', sans-serif;
+             font-weight: bolder;
+             width:1395px;
+             height:65px;
         }
-
-        table,
-        th,
-        td {
-            border: 1px solid gray;
-        }
-
-        .top-heading {
-            background-color: rgb(255, 200, 99);
-        }
-
-        .sub-heading {
-            background-color: rgb(255, 229, 182);
-        }
-
-        #sub-heading {
-            background-color: rgb(250, 238, 216);
-        }
-
-        .food-icon {
-            height: 30px;
-        }
-
-
         .thumbnail:hover {
-            background-color: rgb(106, 92, 76);
-
+            background-color: red;
+            opacity: 20%;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+             text-decoration: none;
+         }
+        .fa:hover {
+            opacity: 0.7;
+             color:red;
         }
 
-        .food-row:hover {
-            background-color: orange;
+
+        /* Facebook */
+        .fa-facebook {
+             background: #3B5998;
+            color: white;
+         }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        } 
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
         }
+
 
         .clickbuttons {
             background-color: red;
             font: size 1pt;
 
         }
+        .sideinfo {
+            color:red;
+            font-family:'Poppins', sans-serif;
+            font-weight:bold;
+        }
 
-        P {
+        P,body {
             font: bolder;
+            font-style: 'Poppins', sans-serif;
+        }
+        .Title1 {
+            color:red;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        .tabtitle {
+            color:red;
+            font-family: 'Poppins', sans-serif; 
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="ia_logo.png.png" style="width: 50px" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link active thumbnail" aria-current="page" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active thumbnail" href="#">Order</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link disabled thumbnail" href="#" tabindex="-1" aria-disabled="true">Shop</a>
-                    </li>
-                </ul>
-                <form class="d-flex" style="color:black">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">
-                        Search
-                    </button>
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="Lp_icon.png" style="width: 50px" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active thumbnail" aria-current="page" href="dashboard_login.html">Dashboard</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active thumbnail" href="#">Transact</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link active thumbnail" href="#" tabindex="-1" aria-disabled="true">Support</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav sm-icons">
+            <a href="https://www.facebook.com/Lunpadiduremittance/" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </ul>
         </div>
     </nav>
 
     <div class="container mt-1 pd-1">
         <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-md-4 sideinfo">
                 IA Bills Payment Center
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-md-4 sideinfo ">
                 Welcome Irish!
             </div>
         </div>
         <div class="row">
             <div class="col-md-4 ">
-                <img src="balance.jpg" style="width: 20px">
-                <p class=" fs-10">Branch Balance:_______</p>
+                <img src="balance.jpg" style="width: 20px">Branch Balance:₱18,888.00</p>
             </div>
         </div>
 
         <div class="col-md-4 offset-md-4">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a href="#selecttab" class="nav-link active" data-bs-toggle="tab">Select Biller</a>
+                    <a href="#selecttab" class="nav-link active tabtitle" data-bs-toggle="tab">Select Biller</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#formtab" class="nav-link" data-bs-toggle="tab">Form</a>
+                    <a href="#formtab" class="nav-link tabtitle " data-bs-toggle="tab">Form</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#confirmationtab" class="nav-link" data-bs-toggle="tab">Confirmation</a>
+                    <a href="#confirmationtab" class="nav-link tabtitle " data-bs-toggle="tab">Confirmation</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#messagetab" class="nav-link" data-bs-toggle="tab">Message</a>
+                    <a href="#messagetab" class="nav-link tabtile " data-bs-toggle="tab">Message</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="selecttab">
                     <div class>
-                        <p class="fs-1">Select Biller</p>
+                        <p class=" Title1">Select Biller</p>
                     </div>
                     <div class="dropdown mt-1 pd 1">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle clickbuttons" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                           Select Biller
                         </button>
                         <ul class="dropdown-menu">
@@ -162,7 +183,7 @@
                 </div>
                 <div class="tab-pane fade" id="formtab">
                     <div class>
-                        <p class="fs-1">Enter Biller Info</p>
+                        <p class=" Title1">Enter Biller Info</p>
                     </div>
                  
                     <form>
@@ -191,16 +212,17 @@
                             <input type="text" id="inputamount" class="form-control" aria-describedby="billernameHelpBlock">
                             <div id="inputcontactHelpBlock" class="form-text">
                             </div>
-                        <button type="submit" class="btn btn-primary">Order</button>
+    
+                        <button type="submit" class="btn btn-primary clickbuttons">Order</button>
                       </form>
 
                   
                 </div>
                 <div class="tab-pane fade " id="confirmationtab">
-                    <p>Confirmation Receipt</p>
+                    <p class="Title1">Confirmation Receipt</p>
                 </div> 
                 <div class="tab-pane fade" id="messagetab">
-                    <p>Messages tab content ...</p>
+                    <p class="Title1">Messages tab content ...</p>
                 </div> 
             </div>
             </div>

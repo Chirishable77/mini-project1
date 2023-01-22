@@ -24,6 +24,36 @@
 </head>
 
 <body>
+  <!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "110043734622850");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v15.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
   <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#"><img src="Lp_icon.png" style="width: 50px" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -40,7 +70,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active thumbnail" href="#" tabindex="-1" aria-disabled="true">Support</a>
+            <a class="nav-link active thumbnail" href="support_page.html" tabindex="-1" aria-disabled="true">Support</a>
           </li>
         </ul>
         <ul class="navbar-nav sm-icons">
@@ -143,6 +173,7 @@
       </div>
     </div>
   </div>
+  <footer>
   <div class="row mt-5">
     <img src="footer_pic.png" class="footercontainer4" />
   </div>
@@ -156,13 +187,6 @@
   <div class="row text-center footertext">
     <p>2020 - 2023 IA Bills Payment All Rights Reserved</p>
   </div>
-
-
-
-
-
-
-
+  </footer>
 </body>
-
 </html>

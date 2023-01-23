@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-    <title>IA-Order Page</title>
+    <title>Loading Page</title>
     <style>
         .navbar {
             background-image: url("navbar_bg.png");
@@ -80,6 +80,16 @@
             font-family:'Poppins', sans-serif;
             font-weight:bold;
         }
+        #exampleModal {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight:bolder;
+            text-align: center;
+        }
+        .myModal {
+            background-color: red;
+            opacity:60%;
+        }
     </style>
 </head>
 
@@ -124,7 +134,7 @@
                     <a class="nav-link active thumbnail" aria-current="page" href="dashboard_login.html">Dashboard</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link active thumbnail" href="#">Transact</a>
+                    <a class="nav-link active thumbnail" href="index.html">Transact</a>
                 </li>
 
                 <li class="nav-item">
@@ -205,7 +215,30 @@
                     <span id="Inline" class="form-text">
                     </span>
                 </div>
-                <button type="submit" class="btn btn-primary ms-2" id="orderbutton">Load Number</button>
+                <div class=" row offset-md-2">
+                    <div class="col-lg-8 offset-md-2  mt-2 ms-2">
+                        <button
+                          type="button" class="btn btn-primary" id="orderbutton" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        >
+                         Load Number
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1">
+                          <div class="modal-dialog">
+                            <div class="modal-content myModal">
+                              <div class="modal-header">
+                                <h2 class="modal-title">SUCCESS!</h2>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                ></button>
+                              </div>
+                              <div class="modal-body">Loaded to the Mobile No. 09776855227</div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
 

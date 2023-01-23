@@ -198,6 +198,8 @@
   .contactUsbutton {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
+    animation: fadeInFromTop .5s linear forwards,floating ease 4s infinite;
+    shape-outside: border-box;
   }
 
   .containercarousel {

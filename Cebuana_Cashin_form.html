@@ -68,7 +68,7 @@
 
         }
 
-        #orderbutton {
+        .orderbutton {
             font-size: small;
             background-color: red;
             width: 100px;
@@ -120,6 +120,16 @@
             color:red;
             font-family:'Poppins', sans-serif;
             font-weight:bold;
+        }
+        #exampleModal {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight:bolder;
+            text-align: center;
+        }
+        .myModal {
+            background-color: red;
+            opacity:60%;
         }
     </style>
 </head>
@@ -580,12 +590,31 @@
 
         <div class=" row offset-md-2">
             <div class="col-lg-8 offset-md-2  mt-5 ms-5 text-center ">
-                <div class>
-                    <input type="button" value="NEXT" id="orderbutton"></input>
+                <button
+                  type="button"
+                  class="btn btn-primary orderbutton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                 NEXT
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content myModal">
+                      <div class="modal-header">
+                        <h2 class="modal-title">SUCCESS!</h2>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+                      <div class="modal-body">Added New Customer</div>
+                    </div>
+                  </div>
                 </div>
             </div>
-        </div>
-
+        </div>        
 </body>
 
 </html>
